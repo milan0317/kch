@@ -1,0 +1,162 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: top;
+	text-decoration: none;
+	font-size: 14px;
+	color: #222;
+}
+.wrap {
+	margin: 0 auto;
+	width: 1000px;
+}
+header {
+	padding-top: 30px;
+	height: 180px;
+}
+.mainslide {
+	overflow: hidden;
+	position: relative;
+	height: 350px;
+}
+.content {
+	padding-top: 20px;
+	height: 480px;
+}
+footer {
+	padding: 20px 0;
+	height: 150px;
+	background: #8e8e8e;
+	text-align: center;
+}
+header h1 {
+	float: left;
+}
+header nav {
+	margin: 0 200px;
+	padding-top: 10px;
+}
+header .depth1>li {
+	float: left;
+	position: relative;
+}
+header .depth1 a {
+	display: block;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+	width: 200px;
+}
+header .depth1>li>a:hover {
+	background: #e30076;
+	color: #fff;
+}
+header .depth2>li>a:hover {
+	color: #e30076;
+}
+header .depth2 {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 200;
+	background: rgba(255,255,255,0.5);
+}
+.mainslide ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 3000px;
+}
+.mainslide li {
+	float: left;
+	position: relative;
+}
+.mainslide .slide_txt {
+	position: absolute;
+	top: 170px;
+	left: 380px;
+	border-radius: 10px;
+	padding: 5px 20px 10px;
+	text-align: center;
+	font-size: 18px;
+	z-index: 150;
+	background: rgba(227,0,118,0.5);
+}
+.col1 {
+	float: left;
+	width: 400px;
+}
+.col2 {
+	float: left;
+	width: 300px;
+	margin-left: 50px;
+}
+.col3 {
+	float: right;
+	width: 250px;
+}
+.content h2 {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.col1 li {
+	margin-bottom: 10px;
+}
+.col1 span {
+	float: right;
+	font-size: 12px;
+	color: #999;
+}
+.col1 a {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline-block;
+	width: 300px;
+	overflow: hidden;
+}
+.col2 a {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+.col2 img {
+	margin-bottom: 10px;
+	width: 100px;
+	vertical-align: middle;
+}
+.col2 a:hover {
+	color: #e30076;
+}
+.footmenu {
+	margin-bottom: 20px;
+}
+footer address {
+	font-style: normal;
+}
+#modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	padding-top: 150px;
+	z-index: 300;
+}
+#modal button {
+	background: #eee;
+	border: none;
+	border-radius: 6px;
+	padding: 6px 12px;
+	color: #e30076;
+	cursor: pointer;
+}
+#modal.on{
+	display: block;
+}
